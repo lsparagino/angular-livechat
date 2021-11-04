@@ -1,5 +1,5 @@
 {
-  "name": "@livechat/angular-widget",
+  "name": "@lsparagino/angular-widget",
   "version": "0.4.0",
   "author": "LiveChat, Inc",
   "description": "Angular component to integrate LiveChat with your single-page app",
@@ -11,27 +11,27 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/livechat/angular-livechat.git"
+    "url": "git+https://github.com/lsparagino/angular-livechat.git"
   },
-  "homepage": "https://github.com/livechat/angular-livechat",
   "bugs": {
-    "url": "https://github.com/livechat/angular-livechat/issues"
+    "url": "https://github.com/lsparagino/angular-livechat/issues"
   },
+  "homepage": "https://github.com/lsparagino/angular-livechat",
   "peerDependencies": {
     "@angular/core": ">=11.0.0 <14.0.0",
     "rxjs": ">=6.0.0 <=7.4.0"
   },
   "sideEffects": false,
   "dependencies": {
-    "tslib": "^1.9.0"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@angular/compiler": "^13.0.0",
-    "@angular/compiler-cli": "^13.0.0",
-    "@angular/core": "^13.0.0",
-    "ng-packagr": "^13.0.0",
+    "@angular/compiler": "^12.0.0",
+    "@angular/compiler-cli": "^12.0.0",
+    "@angular/core": "^12.0.0",
+    "ng-packagr": "^12.0.0",
     "rxjs": "^7.4.0",
-    "typescript": "^4.4.2"
+    "typescript": "~4.3.0"
   },
   "scripts": {
     "build": "ng-packagr",
