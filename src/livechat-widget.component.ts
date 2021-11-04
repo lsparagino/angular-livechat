@@ -15,21 +15,21 @@ export class LivechatWidgetComponent implements OnInit {
   @Input() visitor: { name: string, email: string, };
   @Input() gaVersion: string;
   @Output() public onChatLoaded = new Subject<LiveChatWidgetApiModel>();
-  @Output() public onAfterLoad = new Subject();
-  @Output() public onBeforeLoad = new Subject();
-  @Output() public onChatEnded = new Subject();
+  @Output() public onAfterLoad = new Subject<void>();
+  @Output() public onBeforeLoad = new Subject<void>();
+  @Output() public onChatEnded = new Subject<void>();
   @Output() public onChatStarted = new Subject<any>();
   @Output() public onChatStateChanged = new Subject<any>();
-  @Output() public onChatWindowHidden = new Subject();
-  @Output() public onChatWindowMinimized = new Subject();
-  @Output() public onChatWindowOpened = new Subject(); data
+  @Output() public onChatWindowHidden = new Subject<void>();
+  @Output() public onChatWindowMinimized = new Subject<void>();
+  @Output() public onChatWindowOpened = new Subject<void>(); data
   @Output() public onMessage = new Subject<any>();
   @Output() public onPostchatSurveySubmitted = new Subject<any>();
   @Output() public onPrechatSurveySubmitted = new Subject<any>();
   @Output() public onRatingCommentSubmitted = new Subject<any>();
   @Output() public onRatingSubmitted = new Subject<any>();
   @Output() public onTicketCreated = new Subject<any>();
-  @Output() public onWidgetResize = new Subject();
+  @Output() public onWidgetResize = new Subject<void>();
 
   public agentsAreAvailable: Function;
   public chatRunning: Function;
